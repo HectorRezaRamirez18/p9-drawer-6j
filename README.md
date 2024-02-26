@@ -21,3 +21,15 @@ samples, guidance on mobile development, and a full API reference.
 ## Links de p9_Drawer_6j
 - https://api.flutter.dev/flutter/widgets/ListView-class.html
 
+## imagenes
+![image](https://github.com/HectorRezaRamirez18/p9-drawer-6j/assets/143548137/3a9ec63b-a319-4846-9161-f8b5e9d5996c)
+![image](https://github.com/HectorRezaRamirez18/p9-drawer-6j/assets/143548137/18c15a84-be9b-4744-b4a0-475793b10fe2)
+
+
+## Links de referencia
+https://codesinsider.com/flutter-appbar-example-tutorial/
+
+https://appmaking.com/flutter-drawer-example/
+
+
+
