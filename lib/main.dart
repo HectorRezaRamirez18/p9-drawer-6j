@@ -1,41 +1,105 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MiDrawerReza());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
+class MiDrawerReza extends StatelessWidget {
+  const MiDrawerReza({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        // useMaterial3: true,
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Drawer Reza'),
+          centerTitle: true,
+          backgroundColor: Colors.red,
+          actions: [
+            IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(
+                Icons.accessibility_new_outlined,
+              ),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(
+                Icons.more_vert,
+              ),
+              onPressed: () {},
+            )
+          ],
+        ),
+        backgroundColor: const Color(0xffffffff),
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              UserAccountsDrawerHeader(
+                accountName: Text("AppMaking.co"),
+                accountEmail: Text("sundar@appmaking.co"),
+                currentAccountPicture: CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      "https://raw.githubusercontent.com/HectorRezaRamirez18/Practica1_6J_IOS/main/logo2.avif"),
+                ),
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      "https://raw.githubusercontent.com/HectorRezaRamirez18/Practica1_6J_IOS/main/fondooo.jpg",
+                    ),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                otherAccountsPictures: [
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    backgroundImage: NetworkImage(
+                        "https://raw.githubusercontent.com/HectorRezaRamirez18/Practica1_6J_IOS/main/logiyo.webp"),
+                  ),
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    backgroundImage: NetworkImage(
+                        "https://raw.githubusercontent.com/HectorRezaRamirez18/Practica1_6J_IOS/main/logiyo2.avif"),
+                  ),
+                ],
+              ),
+              ListTile(
+                leading: Icon(Icons.account_box_sharp, color: Colors.black),
+                title: Text("Cliente"),
+                onTap: () {},
+              ),
+              const ListTile(
+                leading: Icon(Icons.add_box, color: Colors.black),
+                title: Text(
+                  'Inventario',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              const ListTile(
+                leading: Icon(Icons.add_ic_call_sharp, color: Colors.black),
+                title: Text(
+                  'Pedidos',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              const ListTile(
+                leading: Icon(Icons.air_sharp, color: Colors.black),
+                title: Text(
+                  'Provedor',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              const ListTile(
+                leading: Icon(Icons.account_tree_rounded, color: Colors.black),
+                title: Text(
+                  'Trabajadores',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
