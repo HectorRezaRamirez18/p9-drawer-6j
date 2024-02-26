@@ -23,7 +23,8 @@ samples, guidance on mobile development, and a full API reference.
 
 ## imagenes
 ![image](https://github.com/HectorRezaRamirez18/p9-drawer-6j/assets/143548137/3a9ec63b-a319-4846-9161-f8b5e9d5996c)
-![image](https://github.com/HectorRezaRamirez18/p9-drawer-6j/assets/143548137/18c15a84-be9b-4744-b4a0-475793b10fe2)
+![image](https://github.com/HectorRezaRamirez18/p9-drawer-6j/assets/143548137/49ace911-7554-417c-a11a-e5031793db02)
+
 
 
 ## Links de referencia
